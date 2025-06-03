@@ -1,7 +1,18 @@
 ---
 layout: post
 title: "STM32 Startup From Scratch"
+author: "Allex Franc"
 date: 2025-06-03
+tags: [stm32, embedded, bare-metal, arm]
+excerpt: "Building a minimal boot sequence with less than 50 lines of code"
+---
+
+---
+layout: post
+title: "STM32 Startup From Scratch"
+date: 2024-12-17
+author: "Your Name"
+tags: [stm32, embedded, bare-metal, arm]
 excerpt: "Building a minimal boot sequence with less than 50 lines of code"
 ---
 
