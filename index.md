@@ -4,7 +4,7 @@ layout: default
 
 <section>
   <h3>Bio</h3>
-  <p>Android Security Engineer by day, masochist by night. Currently discovering how many ways an STM32 can refuse to work.</p>
+  <p>Professional Android Security Engineer. Amateur systems programmer. Expert at breaking things in both domains.</p>
   
   <p>
     <a href="https://linkedin.com/in/{{ site.linkedin }}">LinkedIn</a> | 
