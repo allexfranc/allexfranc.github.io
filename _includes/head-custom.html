@@ -1,18 +1,14 @@
 <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
-<style>
-  a:contains("View on GitHub") {
-    display: none;
-  }
-  
-  /* Or if the button has a specific class: */
-  a.btn[href="https://allexfranc.github.io"] {
-    display: none;
-  }
-  
-  /* Or hide based on parent element */
-  header section a.btn {
-    display: none;
-  }
-  
-</style>
+<script>
+  window.onload = function() {
+    // Find all links
+    var links = document.getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].innerText === 'View on GitHub' || 
+          links[i].textContent === 'View on GitHub') {
+        links[i].style.display = 'none';
+      }
+    }
+  };
+</script>
