@@ -7,15 +7,6 @@ tags: [stm32, embedded, bare-metal, arm]
 excerpt: "Building a minimal boot sequence with less than 50 lines of code"
 ---
 
----
-layout: post
-title: "STM32 Startup From Scratch"
-date: 2024-12-17
-author: "Your Name"
-tags: [stm32, embedded, bare-metal, arm]
-excerpt: "Building a minimal boot sequence with less than 50 lines of code"
----
-
 Have you ever wondered what's the minimal code you need 
 to boot an STM32F407? Well, I have...
 
