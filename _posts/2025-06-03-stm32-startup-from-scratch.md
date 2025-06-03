@@ -22,10 +22,10 @@ So here's how (and why) to build your own from absolute zero:
 ## Setup - The Boring part:
 
 I won't go into too much details here. Here's what I'm using(no fancy IDE, remember?):
-[Arm GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads) (compilation and tools)
-Notepad++ (code editor)
-MSYS2 (make and linux like environment)
-Some flashing tool at your disposal (command line or STM32CubeProgrammer)
+- [Arm GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads) (compilation and tools)
+- Notepad++ (code editor)
+- MSYS2 (make and linux like environment)
+- Some flashing tool (command line or STM32CubeProgrammer)
 
 ## Understanding the Boot Process
 
