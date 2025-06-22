@@ -2,7 +2,7 @@
 layout: post
 title: "STM32 Scheduler Part 1"
 author: "Allex Franc"
-date: 2025-06-15
+date: 2025-06-22
 tags: [stm32, embedded, bare-metal, arm, os, scheduler, round robin]
 excerpt: "From minimal boot to Operating System - Part 1: The minimal scheduler"
 ---
