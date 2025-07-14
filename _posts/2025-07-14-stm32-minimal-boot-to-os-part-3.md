@@ -320,7 +320,7 @@ In our case, updating the LCD 20 times per second (50ms sleep) gives us responsi
   check if you're spending too much time in interrupts or context switching.
 
 ## Result
-![LCD showing system stats]({{ "/images/lcd-system-monitor.jpg" | relative_url }})
+![LCD showing system stats]({{ "/images/lcd-system-monitor.jpeg" | relative_url }})
 
 ## Stay tuned!
 Thank you for reading and reaching this far!
