@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STM32 System Monitor"
+title: "STM32 Memory Allocation"
 author: "Allex Franc"
 date: 2025-08-07
 tags: [stm32, embedded, bare-metal, arm, os, scheduler, round robin, kernel, lcd, debug, memory]
