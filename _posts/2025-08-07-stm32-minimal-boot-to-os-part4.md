@@ -28,6 +28,17 @@ Let's remember some hardware facts about the STM32F407:
 - Address range: 0x20000000 to 0x2001FFFF
 - Where variables, stack, and heap live
 
+**EDIT**
+If you look at the datasheet it says the stm32f407 discovery board has 192KB of RAM size, and this is correct! 
+But there's a catch: the board has 128KB of contiguous SRAM memory from 0x20000000 to 0x2001FFFF and 64KB of a special
+faster memory, from 0x10000000 to 0x1000FFFF. It's called CCM - Core Coupled Memory. This 64KB block of RAM is directly connected to the 
+ARM Cortex-M4 core, bypassing the main system bus. Because it has a dedicated, direct path to the processor, 
+the CPU can access data and execute code from the CCM with zero-wait-states, even at full clock speed. 
+This makes it significantly faster than the main SRAM, which has to be accessed through the bus matrix that 
+juggles requests from other peripherals.
+I'll not use the CCM for the OS, at least not for this first implementation of malloc. It's completely free for the user now! 
+But soon I'll make good use for it within the OS, so stay tuned.
+
 These addresses should ring some bells... A mini recap of some places where I've already used this before:
 1. Remember the first post where I defined the startup.c file? The first thing the chip reads is the 0x08000000 address. Thats 
 where we tell the linker to put the vector table! And what's the first thing at the vector table? The address of the stack pointer, 0x20020000 
