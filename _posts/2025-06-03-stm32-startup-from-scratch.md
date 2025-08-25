@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STM32 Startup From Scratch"
+title: "Startup From Scratch"
 author: "Allex Franc"
 date: 2025-06-03
 tags: [stm32, embedded, bare-metal, arm]

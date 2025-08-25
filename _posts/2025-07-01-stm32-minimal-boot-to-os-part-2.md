@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STM32 Kernel"
+title: "Kernel"
 author: "Allex Franc"
 date: 2025-07-01
 tags: [stm32, embedded, bare-metal, arm, os, scheduler, round robin, kernel]

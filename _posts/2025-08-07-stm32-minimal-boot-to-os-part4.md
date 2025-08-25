@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STM32 Memory Allocation"
+title: "Memory Allocation"
 author: "Allex Franc"
 date: 2025-08-07
 tags: [stm32, embedded, bare-metal, arm, os, scheduler, round robin, kernel, lcd, debug, memory]
@@ -114,6 +114,7 @@ void task_stack_monitor(void) {
 Anyway, we still have to come up with some kind of layout for the memory implementation. Given that the mc has 128kb of RAM, 
 I decided to have the following:
 
+```c
 ├───────────────────────────────────────────────────────────────────┤
  checked _ebss address: 			0x20000880, 2kb used
  checked msp water mark address: 	0x2001FFC8, 56b used
@@ -139,6 +140,8 @@ I decided to have the following:
 0x20020000 └──────────────┘
 
 ├───────────────────────────────────────────────────────────────────┤
+
+```
 
 Notice how the stack starts at 0x20020000 and grows downward toward 0x2001F800, while the heap starts at 0x20005000 
 and grows upward toward 0x2001F800. They grow toward each other but are separated by that boundary at 0x2001F800.
